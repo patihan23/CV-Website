@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio - ปฏิหาริย์ (Patihan)</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- เพิ่ม Font Awesome สำหรับไอคอน -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- เพิ่ม Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ส่วนเมนูหลัก (Header/Navbar) -->
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo" data-translate="name">ปฏิหาริย์</div>
+
+          <ul class="menu">
+            <li><a href="#about">เกี่ยวกับฉัน</a></li>
+
+            <li><a href="#portfolio">ผลงาน</a></li>
+
+            <li><a href="#contact">ติดต่อ</a></li>
+
+            <li><a href="#" id="language-toggle" class="lang-switch">EN</a></li>
+          </ul>
+
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ส่วนแนะนำตัว (Hero Section) -->
+
+    <section class="hero" id="about">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-image">
+            <img src="images/profile.JPG" alt="โปรไฟล์รูปภาพ" />
+          </div>
+
+          <div class="hero-text">
+            <h1>สวัสดีครับ, ผมชื่อ <span class="highlight">ปฏิหาริย์</span></h1>
+
+            <h2>Web Developer</h2>
+
+            <p>
+              ยินดีต้อนรับสู่พอร์ตโฟลิโอของผม
+              นี่คือที่รวบรวมผลงานและโปรเจกต์ต่างๆ ที่ผมได้สร้าง
+            </p>
+
+            <div class="social-links">
+              <a href="https://github.com/patihan23" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+
+              <a href="https://www.facebook.com/rkunsor" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+
+              <a href="https://www.instagram.com/_patihann/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+
+            <div class="cta-buttons">
+              <a href="#portfolio" class="btn btn-primary">ดูผลงานของฉัน</a>
+
+              <a href="#contact" class="btn btn-secondary">ติดต่อฉัน</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ส่วนประวัติและข้อมูลส่วนตัว -->
+
+    <section class="about-details">
+      <div class="container">
+        <div class="about-cards">
+          <div class="about-card">
+            <h3>
+              <i class="fas fa-user-graduate"></i>
+              <span data-translate="education">ประวัติการศึกษา</span>
+            </h3>
+
+            <ul>
+              <li>
+                <span class="year" data-translate="year-bachelor"
+                  >2566 - 2568</span
+                >
+
+                <p class="degree" data-translate="degree-bachelor">
+                  ปริญญาตรี สาขาคอมพิวเตอร์ธุรกิจ
+                </p>
+
+                <p class="school" data-translate="university-bachelor">
+                  มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน
+                </p>
+
+                <p class="gpa">
+                  <i class="fas fa-award"></i>
+                  <span data-translate="gpa-bachelor">เกรดเฉลี่ย: 3.86</span>
+                </p>
+              </li>
+
+              <li>
+                <span class="year" data-translate="year-diploma"
+                  >2564 - 2566</span
+                >
+
+                <p class="degree" data-translate="degree-diploma">
+                  ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส)
+
+                  <br />สาขาเทคโนโลยีธุรกิจดิจิทัล
+                </p>
+
+                <p class="school" data-translate="school-diploma">
+                  วิทยาลัยเทคนิคหนองคาย
+                </p>
+
+                <p class="gpa">
+                  <i class="fas fa-award"></i>
+                  <span data-translate="gpa-diploma">เกรดเฉลี่ย: 3.53</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3><i class="fas fa-laptop-code"></i> ทักษะและความสามารถ</h3>
+
+            <div class="skills">
+              <span class="skill-tag">HTML</span>
+
+              <span class="skill-tag">CSS</span>
+
+              <span class="skill-tag">JavaScript</span>
+
+              <span class="skill-tag">PHP</span>
+
+              <span class="skill-tag">MySQL</span>
+
+              <span class="skill-tag">Git</span>
+
+              <span class="skill-tag">Bootstrap</span>
+
+              <span class="skill-tag">Codeigniter</span>
+
+              <span class="skill-tag">React.js</span>
+
+              <span class="skill-tag">Docker</span>
+
+              <span class="skill-tag">Filezila</span>
+
+              <span class="skill-tag">Firebase</span>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <h3><i class="fas fa-heart"></i> ความสนใจ</h3>
+
+            <div class="interests">
+              <span class="interest-item"
+                ><i class="fas fa-code"></i> Web Development</span
+              >
+
+              <span class="interest-item"
+                ><i class="fas fa-mobile-alt"></i> Mobile App Development</span
+              >
+
+              <span class="interest-item"
+                ><i class="fas fa-palette"></i> UI/UX Design</span
+              >
+
+              <span class="interest-item"
+                ><i class="fas fa-robot"></i> AI & Machine Learning</span
+              >
+
+              <span class="interest-item"
+                ><i class="fas fa-gamepad"></i> Gaming</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ส่วนแสดงผลงาน (Portfolio) -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2>ผลงานของฉัน</h2>
+
+          <p>โปรเจกต์ระบบเว็บแอปพลิเคชันที่ผมเคยพัฒนา</p>
+        </div>
+
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+
+          <button class="filter-btn" data-filter="academic">
+            โปรเจกต์จบการศึกษา
+          </button>
+
+          <button class="filter-btn" data-filter="internship">
+            โปรเจกต์ฝึกงาน
+          </button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- ผลงานที่ 1: ระบบฉีดวัคซีนสุนัขและแมว -->
+
+          <div class="portfolio-item" data-category="academic">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img src="images/project1.png" alt="ระบบฉีดวัคซีนสุนัขและแมว" />
+
+                <div class="portfolio-overlay">
+                  <a href="#" class="view-project"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+
+                  <a
+                    href="http://project-pet.wuaze.com/"
+                    target="_blank"
+                    class="visit-site"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="portfolio-info">
+                <h3 data-translate="project1-title">
+                  ระบบฉีดวัคซีนสุนัขและแมว
+                </h3>
+
+                <p class="project-type">
+                  <i class="fas fa-graduation-cap"></i>
+                  <span data-translate="project1-type">โปรเจกต์จบการศึกษา</span>
+                </p>
+
+                <p class="portfolio-url">
+                  <i class="fas fa-link"></i>
+
+                  <a href="http://project-pet.wuaze.com/?i=1" target="_blank"
+                    >project-pet.wuaze.com</a
+                  >
+                </p>
+
+                <div class="lang-distribution">
+                  <h4>สัดส่วนภาษาที่ใช้ในโปรเจกต์</h4>
+
+                  <div class="lang-bars">
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+
+                        <span>57.9%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress css"
+                          style="width: 57.9%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-php"></i> PHP</span>
+
+                        <span>30.4%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress php"
+                          style="width: 30.4%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+
+                        <span>9.9%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress javascript"
+                          style="width: 9.9%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-php"></i> Hack</span>
+
+                        <span>1.8%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress hack"
+                          style="width: 1.8%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tech-stack">
+                  <span class="tech">HTML</span>
+
+                  <span class="tech">CSS</span>
+
+                  <span class="tech">JavaScript</span>
+
+                  <span class="tech">PHP</span>
+
+                  <span class="tech">MySQL</span>
+
+                  <span class="tech">Bootstrap</span>
+                </div>
+
+                <p class="portfolio-desc" data-translate="project1-desc">
+                  ระบบบริหารจัดการการฉีดวัคซีนสำหรับสัตว์เลี้ยงประกอบด้วยฟังก์ชันการลงทะเบียนสัตว์เลี้ยง,
+                  การจัดการข้อมูลวัคซีน, การแจ้งเตือนกำหนดการฉีดวัคซีน
+                  และระบบรายงานสถิติ
+                  โดยมีผู้ดูแลระบบและเจ้าหน้าที่ที่สามารถจัดการข้อมูลต่างๆ เช่น
+                  เจ้าของสัตว์และวัคซีน
+                  ส่วนผู้ใช้ทั่วไปสามารถค้นหาประวัติการฉีดวัคซีนและดูสถิติ
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ผลงานที่ 2: ระบบยืมคืนและแจ้งซ่อมครุภัณฑ์ -->
+
+          <div class="portfolio-item" data-category="internship">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="images/project2.png"
+                  alt="ระบบยืมคืนและแจ้งซ่อมครุภัณฑ์"
+                />
+
+                <div class="portfolio-overlay">
+                  <a href="#" class="view-project"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+
+                  <a
+                    href="http://br-check.wuaze.com/"
+                    target="_blank"
+                    class="visit-site"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="portfolio-info">
+                <h3 data-translate="project2-title">
+                  ระบบยืมคืนและแจ้งซ่อมครุภัณฑ์
+                </h3>
+
+                <p class="project-type">
+                  <i class="fas fa-briefcase"></i>
+                  <span data-translate="project2-type"
+                    >โปรเจกต์ระหว่างฝึกงาน</span
+                  >
+                </p>
+
+                <p class="portfolio-url">
+                  <i class="fas fa-link"></i>
+
+                  <a href="http://br-check.wuaze.com/" target="_blank"
+                    >br-check.wuaze.com</a
+                  >
+                </p>
+
+                <div class="lang-distribution">
+                  <h4>สัดส่วนภาษาที่ใช้ในโปรเจกต์</h4>
+
+                  <div class="lang-bars">
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+
+                        <span>35.3%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress css"
+                          style="width: 35.3%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-php"></i> PHP</span>
+
+                        <span>33.6%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress php"
+                          style="width: 33.6%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-js"></i> TypeScript</span>
+
+                        <span>12.9%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress typescript"
+                          style="width: 12.9%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-sass"></i> SCSS</span>
+
+                        <span>12.7%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress scss"
+                          style="width: 12.7%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-php"></i> Hack</span>
+
+                        <span>2.9%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress hack"
+                          style="width: 2.9%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+
+                        <span>1.9%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress javascript"
+                          style="width: 1.9%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="lang-bar-item">
+                      <div class="lang-label">
+                        <span><i class="fas fa-code"></i> Other</span>
+
+                        <span>0.7%</span>
+                      </div>
+
+                      <div class="lang-progress-bar">
+                        <div
+                          class="lang-progress other"
+                          style="width: 0.7%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tech-stack">
+                  <span class="tech">CSS</span>
+
+                  <span class="tech">PHP</span>
+
+                  <span class="tech">TypeScript</span>
+
+                  <span class="tech">SCSS</span>
+
+                  <span class="tech">JavaScript</span>
+
+                  <span class="tech">MySQL</span>
+
+                  <span class="tech">jQuery</span>
+
+                  <span class="tech">AJAX</span>
+                </div>
+
+                <p class="portfolio-desc" data-translate="project2-desc">
+                  ระบบบริหารจัดการยืม-คืนและแจ้งซ่อมครุภัณฑ์ พร้อมระบบสแกน QR
+                  Code และแจ้งเตือนผ่านอีเมล์
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ส่วนติดต่อ (Contact) -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>ติดต่อฉัน</h2>
+
+          <p>สนใจร่วมงานหรือมีคำถาม? ติดต่อผมได้ที่นี่</p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+
+              <div>
+                <h3>อีเมล</h3>
+                <p>patihan.su@outlook.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+
+              <div>
+                <h3>โทรศัพท์</h3>
+
+                <p>082-339-2743</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+
+              <div>
+                <h3 data-translate="address">ที่อยู่ปัจจุบัน</h3>
+
+                <p data-translate="address-value">หนองคาย, ประเทศไทย</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fab fa-line"></i>
+
+              <div>
+                <h3>Line ID</h3>
+
+                <p>patihan03</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-alternatives">
+            <div class="cv-download-section">
+              <h3>
+                <i class="fas fa-file-alt"></i>
+                <span data-translate="download-cv">ดาวน์โหลด Resume/CV</span>
+              </h3>
+
+              <p data-translate="download-desc">
+                คุณสามารถดาวน์โหลด CV
+                ของผมเพื่อดูประวัติและประสบการณ์ทำงานได้อย่างละเอียด
+              </p>
+
+              <div class="download-buttons">
+                <a
+                  href="files/CV Resume_Thai.pdf"
+                  class="btn btn-primary"
+                  download
+                >
+                  <i class="fas fa-download"></i>
+                  <span data-translate="download-th">ดาวน์โหลด CV ภาษาไทย</span>
+                </a>
+
+                <a
+                  href="files/CV Resume_Eng.pdf"
+                  class="btn btn-secondary"
+                  download
+                >
+                  <i class="fas fa-download"></i>
+                  <span data-translate="download-en"
+                    >ดาวน์โหลด CV ภาษาอังกฤษ</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            <div class="skills-section">
+              <h3>
+                <i class="fas fa-tools"></i>
+                <span data-translate="tech-skills">ทักษะทางเทคนิค</span>
+              </h3>
+
+              <p data-translate="tech-skills-desc">
+                ทักษะและเทคโนโลยีที่ผมมีความเชี่ยวชาญ
+              </p>
+
+              <div class="skills-progress">
+                <div class="skill-progress-item">
+                  <div class="skill-label">
+                    <span>HTML & CSS</span>
+
+                    <span>90%</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-progress-item">
+                  <div class="skill-label">
+                    <span>JavaScript</span>
+
+                    <span>85%</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-progress-item">
+                  <div class="skill-label">
+                    <span>PHP</span>
+
+                    <span>80%</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-progress-item">
+                  <div class="skill-label">
+                    <span>MySQL</span>
+
+                    <span>75%</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-progress-item">
+                  <div class="skill-label">
+                    <span>Responsive Design</span>
+
+                    <span>95%</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="professional-profiles">
+              <h3>
+                <i class="fas fa-globe"></i>
+                <span data-translate="profiles">โปรไฟล์ออนไลน์</span>
+              </h3>
+
+              <p data-translate="profiles-desc">
+                ติดตามผลงานและกิจกรรมของผมได้ที่
+              </p>
+
+              <div class="profile-links">
+                <a
+                  href="https://github.com/patihan23"
+                  target="_blank"
+                  class="profile-link"
+                >
+                  <i class="fab fa-github"></i>
+
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/rkunsor"
+                  target="_blank"
+                  class="profile-link"
+                >
+                  <i class="fab fa-facebook"></i>
+
+                  <span>Facebook</span>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/_patihann/"
+                  target="_blank"
+                  class="profile-link"
+                >
+                  <i class="fab fa-instagram"></i>
+
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="availability-section">
+              <h3>
+                <i class="fas fa-business-time"></i>
+                <span data-translate="availability">สถานะการทำงาน</span>
+              </h3>
+
+              <div class="availability-status available">
+                <i class="fas fa-check-circle"></i>
+
+                <span data-translate="available">พร้อมรับงานใหม่</span>
+              </div>
+
+              <p data-translate="availability-desc">ผมกำลังเปิดรับโอกาสใหม่ๆ</p>
+
+              <div class="work-preference">
+                <div class="preference-item">
+                  <i class="fas fa-map-marker-alt"></i>
+
+                  <span data-translate="work-location"
+                    >ทำงานที่ออฟฟิศหรือ Hybrid</span
+                  >
+                </div>
+
+                <div class="preference-item">
+                  <i class="fas fa-clock"></i>
+
+                  <span data-translate="work-time">Full-time</span>
+                </div>
+
+                <div class="preference-item">
+                  <i class="fas fa-building"></i>
+
+                  <span data-translate="work-start"
+                    >พร้อมเริ่มงานภายใน 15 วัน</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3 data-translate="name">ปฏิหาริย์</h3>
+
+            <p>Web Developer & Designer</p>
+          </div>
+
+          <div class="footer-social">
+            <a href="https://github.com/patihan23" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <a href="https://www.facebook.com/rkunsor" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+
+            <a href="https://www.instagram.com/_patihann/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p data-translate="footer-copyright">
+            &copy; 2025 ปฏิหาริย์. สงวนลิขสิทธิ์.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal สำหรับดูรายละเอียดโปรเจกต์ -->
+
+    <div class="project-modal" id="projectModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+
+        <div class="modal-body">
+          <!-- เนื้อหาจะถูกเพิ่มด้วย JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <!-- เพิ่มในส่วนท้ายของไฟล์ HTML ก่อน </body> -->
+  </body>
+</html>
