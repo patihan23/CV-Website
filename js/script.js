@@ -1050,7 +1050,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             image: 'images/project1.png',
 
-            url: 'http://project-pet.wuaze.com/'
+            url: 'https://petcare.patihan.space/'
 
         },
 
@@ -1190,7 +1190,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             image: 'images/project2.png',
 
-            url: 'http://br-check.wuaze.com/'
+            url: 'https://br-check.patihan.space/',
 
         }
 
